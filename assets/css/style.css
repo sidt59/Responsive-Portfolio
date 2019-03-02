@@ -63,6 +63,7 @@ h3 {
   border-bottom: 2px solid #cccccc;
 }
 
+
 #logo {
   float: left;
   width: 250px;
@@ -123,6 +124,7 @@ h3, h2 {
   padding-top: 130px;
   min-height: calc(100vh - 70px);
 }
+
 
 .main-section {
   float: left;
@@ -214,4 +216,128 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+/* media queries */
+
+@media screen and (max-width: 640px) {
+  /* navbar */
+  body {
+    position: static;
+  }
+  
+  #masthead {
+    position: static;
+    width: 100%;
+   }
+
+   #logo {
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+
+  nav {
+    width: 100%;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 0px 40px;
+  }
+
+  /* main content area */
+  #main-container {
+    position: static;
+    width: 550px;
+    margin-top: -145px;
+    margin-bottom: 0px;
+  }
+
+  /* portfolio content area */
+  .work {
+    position: relative;
+    margin-left: 100px;    
+  }
+
+  /* contact content area */
+  #contact-form {
+    margin-left: -20px;
+  }
+
+  /* footer */
+  footer {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  /* navbar */
+  #masthead {
+    width: 100%;
+  }
+
+  nav a {
+    margin-right: -25px;
+  }
+
+  /* main content*/
+  .main-section {
+    position: static;
+    width: 685px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: -15px;
+  }
+
+  /* contact form */
+  #contact-form {
+    margin-left: -30px;
+  }
+
+  /* footer */
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    position: static;
+  }
+  
+  /* navbar */
+  #masthead {
+    width: 100%;
+  }
+
+  nav {
+    margin-right: 100px;
+  }
+
+  /* main content area */
+  .main-section {
+    position: relative;
+    width: 600px;
+  }
+
+  /* contact form */
+  #contact-form {
+    margin-left: -20px;
+  }
+
+  /* portfolio */
+  .work {
+    width: 225px;
+    height: 225px;
+  }
+
+  /* footer */
+  footer {
+    width: 100%;
+    position: relative;
+  }
 }
